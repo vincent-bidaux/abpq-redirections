@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "abpq-redirections",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "abpq.cc", "custom_domain": true },
+    { "pattern": "redirections.abpq.cc", "custom_domain": true }
+  ],
+  "kv_namespaces": [{ "binding": "REDIRECTS", "id": "90d1f7b038d240daad38bbc1eb6d838a" }],
+  "services": [{ "binding": "HOME", "service": "abpq-home" }]
+  // Secrets (déjà posés) : SESSION_KEY, SETUP_TOKEN
+}
