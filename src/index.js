@@ -10,7 +10,7 @@
 function createApp() {
   const DASH_HOST = 'redirections.abpq.cc';
   const KEY = 'redirects'; // { [slug]: { slug, target, description, group, status, createdAt, updatedAt } }
-  const RESERVED = new Set(['', 'shots', 'index.html', 'favicon.ico', 'robots.txt']);
+  const RESERVED = new Set(['', 'shots', 'admin', 'index.html', 'favicon.ico', 'robots.txt']);
   const SESSION_DAYS = 30;
   const enc = new TextEncoder();
 
